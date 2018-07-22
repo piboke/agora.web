@@ -1,12 +1,12 @@
-<div class="container" [class.is-mobile]="mobileQuery.matches">
+<div class="container" >
 
   <mat-toolbar color="primary" class="toolbar" role="heading">
-    <button fxShow="true" mat-icon-button (click)="sidenav.toggle()">
+    <button fxHide fxShow.lt-sm="true" mat-icon-button (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
     <h1 class="app-name">Agora</h1>
     <span class="filler"></span>
-    <div fxShow="true" fxHide.lt-md="true">
+    <div fxShow="true" fxHide.lt-sm="true">
       <span>login</span>
       |
       <span>messages</span>
