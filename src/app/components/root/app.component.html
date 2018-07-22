@@ -1,0 +1,34 @@
+<div class="container" [class.is-mobile]="mobileQuery.matches">
+
+  <mat-toolbar color="primary" class="toolbar" role="heading">
+    <button fxShow="true" mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="app-name">Agora</h1>
+    <span class="filler"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <span>login</span>
+      |
+      <span>messages</span>
+    </div>
+  </mat-toolbar>
+</div>
+<div>
+<mat-drawer-container class="sidenav-container">
+  <mat-drawer #sidenav >
+    <mat-nav-list>
+      <a mat-list-item>
+        <mat-icon mat-list-icon>sign-in</mat-icon>
+        <span mat-line>login</span>
+      </a>
+      <a mat-list-item>
+        <mat-icon mat-list-icon>home</mat-icon>
+        <span mat-line>home2</span>
+      </a>
+      
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-container>
+        >_ My content here!!!!
+  </mat-drawer-container>
+</mat-drawer-container>
