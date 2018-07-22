@@ -2,6 +2,7 @@ import { Component, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState, MediaMatcher } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import {ForumComponent} from '@app/modules/forum'
 
 @Component({
   selector: 'app-root',

@@ -9,6 +9,7 @@ import { CoreModule } from '@app/modules/core/core.module';
 import { AppComponent } from './components/root/app.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { routing } from '@app/components/root/router';
+import { ForumModule } from '@app/modules/forum';
 // import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material'
 
 
@@ -22,6 +23,7 @@ import { routing } from '@app/components/root/router';
     CoreModule,
     MaterialModule,
     LayoutModule,
+    ForumModule,
     // MatToolbarModule,
     // MatButtonModule,
     // MatSidenavModule,
